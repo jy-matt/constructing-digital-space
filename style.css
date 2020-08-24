@@ -17,7 +17,6 @@
 }
 
 /* Scrollbar styling */
-
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -46,29 +45,29 @@ h1 {
     font-style: normal;
     font-size: 60px;
     color: var(--color-accent);
-    text-align:center;
+    text-align: center;
 }
 
 h2 {
-  font-family: "yrsa", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  margin-block-end: 0.2em;
-  margin-block-start: 0.4em;
-  color: var(--color-accent2);
-  text-align:left;
+    font-family: "yrsa", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-block-end: 0.2em;
+    margin-block-start: 0.4em;
+    color: var(--color-accent2);
+    text-align: left;
 }
 
 h3 {
-  font-family: "yrsa", serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 20px;
-  margin-block-end: 0.2em;
-  margin-block-start: 0.6em;
-  color: var(--color-accent);
-  text-align:left;
+    font-family: "yrsa", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    margin-block-end: 0.2em;
+    margin-block-start: 0.6em;
+    color: var(--color-accent);
+    text-align: left;
 }
 
 .maindiv {
@@ -77,13 +76,13 @@ h3 {
     font-style: normal;
     font-size: 20px;
     width: 50%;
-    min-width:800px;
-    max-width:1200px;
-    padding-left:50px;
-    padding-right:50px;
-    margin:auto;
-    margin-top:50px;
-    overflow:hidden;
+    min-width: 800px;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
 }
 
 .button-area {
@@ -112,72 +111,101 @@ h3 {
 }
 
 .section {
-  background-color: var(--color-dark-alt2);
-  padding-left:24px;
-  padding-right:30px;
-  padding-top:12px;
-  padding-bottom:18px;
-  margin-bottom:18px;
-  box-shadow: 5px 5px var(--color-dark);
-  overflow:hidden;
+    background-color: var(--color-dark-alt2);
+    padding-left: 24px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    box-shadow: 5px 5px var(--color-dark);
+    overflow: hidden;
 }
 
 .section-wrapper {
-  display:flex;
+    display: flex;
 }
 
 .section-inner {
-  background-color: var(--color-dark-alt2);
-  padding-left:18px;
-  padding-right:24px;
-  padding-top:12px;
-  padding-bottom:18px;
-  margin-bottom:18px;
-  flex:1;
-  box-shadow: 5px 5px var(--color-dark);
+    background-color: var(--color-dark-alt2);
+    padding-left: 18px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    flex: 1;
+    box-shadow: 5px 5px var(--color-dark);
 }
 
-/* Timeline text styles. */
+.navbar {
+	margin-bottom: 18px;
+	display:flex;
+	gap:6px
+}
 
-.timeline p {
+.navbar-button {
+	flex:1;
+	/*text styling*/
+	font-family: "yrsa", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+	color: var(--color-accent2);
+	/*button styling*/
+	background-color: var(--color-dark-alt2);
+	border-width: 0px;
+	outline: 0px;
+	padding: 6px 12px;
+	box-shadow: 5px 5px var(--color-dark);
+}
+
+.navbar-button.active {
+	background-color: var(--color-dark-alt3)
+}
+
+.navbar-button:hover {
+	background-color: var(--color-dark-alt3)
+}
+
+/* pagecontent text styles. */
+.pagecontent p {
     margin: 0px;
     margin-block-end: 12px;
     opacity: 1;
     transition: opacity 500ms;
 }
 
-.timeline .fade-text {
+.pagecontent .fade-text {
     opacity: 0;
 }
 
-.timeline .regular {
+.pagecontent .regular {
     font-style: normal;
 }
 
-.timeline .italic {
+.pagecontent .italic {
     font-style: italic;
 }
 
-.timeline .bold {
+.pagecontent .bold {
     font-weight: 400;
     color: var(--color-accent);
 }
 
-.timeline b {
+.pagecontent b {
     font-weight: 400;
     color: var(--color-accent);
 }
 
-.timeline .quote {
+.pagecontent .quote {
     font-style: italic;
     color: var(--color-accent2);
 }
 
-.timeline .text-light {
+.pagecontent .text-light {
     opacity: 0.8;
 }
 
-.timeline .text-god {
+.pagecontent .text-god {
     font-family: "alexander-quill", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -185,17 +213,17 @@ h3 {
     color: var(--color-light-alt);
 }
 
-.timeline .text-keyword-user {
+.pagecontent .text-keyword-user {
     font-weight: 700;
     color: var(--color-accent2);
 }
 
-.timeline .text-keyword {
+.pagecontent .text-keyword {
     font-weight: 700;
     color: var(--color-accent2);
 }
 
-.timeline strong {
+.pagecontent strong {
     font-weight: 700;
     color: var(--color-accent2);
 }
@@ -211,24 +239,21 @@ ul {
     margin: 6px 0px;
 }
 
-ul.list-plus li:before
-{
+ul.list-plus li:before {
     content: '\002B';
     margin: 0 0.4em 0.2em 0;
 }
 
-ul.list-minus li:before
-{
+ul.list-minus li:before {
     content: '\002D';
     margin: 0 0.4em 0.2em 0;
 }
 
 ol {
-  margin: 6px 0px;
+    margin: 6px 0px;
 }
 
 /* UI Styling */
-
 .nospace {
     padding: 0px;
     margin: 0px;
