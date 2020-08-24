@@ -1,5 +1,3 @@
-import * as THREE from '../build/three.module.js';
-
 import Stats from './threejs/jsm/libs/stats.module.js';
 
 import {
