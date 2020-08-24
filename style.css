@@ -80,6 +80,7 @@ h3 {
     max-width: 1200px;
     padding-left: 50px;
     padding-right: 50px;
+	padding-bottom:24px;
     margin: auto;
     margin-top: 50px;
     overflow: hidden;
@@ -251,6 +252,22 @@ ul.list-minus li:before {
 
 ol {
     margin: 6px 0px;
+}
+
+/* Media Styling */
+.webapp-container {
+	height:500px;
+	outline:0;
+	box-shadow: 5px 5px var(--color-dark);
+}
+
+.webapp-container:focus {
+	outline:0;
+}
+
+.no-outline {
+	outline:0;
+	border:0;
 }
 
 /* UI Styling */
