@@ -258,10 +258,11 @@ ol {
 .webapp-container {
 	height:500px;
 	outline:0;
+	user-select: none;
 	box-shadow: 5px 5px var(--color-dark);
 }
 
-.webapp-container:focus {
+.webapp-container * {
 	outline:0;
 }
 
