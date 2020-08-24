@@ -2,7 +2,12 @@
 	<title>CONSTRUCTING DIGITAL SPACE</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
-	<script src="build\three.js"></script>
+	<script src="build/three.js"></script>
+	<script src="unity/TemplateData/UnityProgress.js"></script>
+	<script src="unity/Build/UnityLoader.js"></script>
+	<script>
+	  var unityInstance = UnityLoader.instantiate("unityContainer", "unity/Build/Build.json", {onProgress: UnityProgress});
+	</script>
 </head>
 
 <body>
@@ -153,8 +158,8 @@
 
 		<div id="tab-unityapp" class="pagecontent-outer tabcontent">
 			<div class="pagecontent">
-				<div class="section">
-					<p>[insert unity app here]</p>
+				<div class="webapp-container no-outline webgl-content">
+					 <div id="unityContainer"></div>
 				</div>
 			</div>
 		</div>
