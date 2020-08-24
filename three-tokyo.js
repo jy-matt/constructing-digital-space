@@ -1,4 +1,4 @@
-import * as THREE from './build/three.module.js';
+import * as THREE from '../build/three.module.js';
 
 import Stats from './threejs/jsm/libs/stats.module.js';
 
@@ -56,11 +56,11 @@ var envMap = new THREE.CubeTextureLoader().load([
 ]);
 
 var dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath('/threejs/js/libs/draco/gltf/');
+dracoLoader.setDecoderPath('./threejs/js/libs/draco/gltf/');
 
 var loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
-loader.load('/threejs/models/gltf/LittlestTokyo.glb', function(gltf) {
+loader.load('./threejs/models/gltf/LittlestTokyo.glb', function(gltf) {
 
 	var model = gltf.scene;
 	model.position.set(1, 1, 0);
