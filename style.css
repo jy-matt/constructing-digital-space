@@ -75,6 +75,7 @@ h3 {
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
+    line-height:1.2em;
     width: 50%;
     min-width: 800px;
     max-width: 1200px;
@@ -165,6 +166,24 @@ h3 {
 
 .navbar-button:hover {
 	background-color: var(--color-dark-alt3)
+}
+
+.media-section {
+    margin-bottom: 18px;
+    display:flex;
+    gap:12px;
+}
+
+.media-item {
+    height:auto;
+    flex-grow: 1;
+}
+
+.media-item img {
+    height:auto;
+    width:100%;
+    object-fit: fill;
+    box-shadow: 5px 5px var(--color-dark);
 }
 
 /* pagecontent text styles. */
