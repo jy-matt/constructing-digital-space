@@ -285,6 +285,17 @@ ol {
 	outline:0;
 }
 
+.webapp-unity-container {
+	height:800px;
+	outline:0;
+	user-select: none;
+	box-shadow: 5px 5px var(--color-dark);
+}
+
+.no-outline-child * {
+	outline:0;
+}
+
 .no-outline {
 	outline:0;
 	border:0;
