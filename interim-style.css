@@ -229,6 +229,14 @@ h3 {
     box-shadow: 5px 5px var(--color-dark);
 }
 
+.media-item video {
+    height:auto;
+    width:100%;
+    margin-top:18px;
+    object-fit: fill;
+    box-shadow: 5px 5px var(--color-dark);
+}
+
 .media-video {
     height:0;
     flex-grow: 1;
