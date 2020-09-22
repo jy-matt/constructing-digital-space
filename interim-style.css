@@ -328,6 +328,10 @@ ul {
     margin: 6px 0px;
 }
 
+ul.list-spaced li {
+    margin-bottom: 0.4em;
+}
+
 ul.list-plus li:before {
     content: '\002B';
     margin: 0 0.4em 0.2em 0;
