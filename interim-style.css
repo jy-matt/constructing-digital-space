@@ -124,6 +124,7 @@ h3 {
     overflow: hidden;
 }
 
+
 .section-sub {
     background-color: var(--color-dark-alt2);
     padding-left: 24px;
@@ -167,6 +168,18 @@ h3 {
     height: auto;
     width: 100%;
     flex-grow:1;
+}
+
+.section:hover {
+    background-color: var(--color-dark-alt3);
+}
+
+.section-sub:hover {
+    background-color: var(--color-dark-alt3);
+}
+
+.section-flex .inner-flex:hover {
+    background-color: var(--color-dark-alt3);
 }
 
 .section-quote {

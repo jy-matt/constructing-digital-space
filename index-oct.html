@@ -1,0 +1,658 @@
+<head>
+	<title>CONSTRUCTING DIGITAL SPACE</title>
+	<link rel="stylesheet" href="interim-style.css">
+	<script src="script.js"></script>
+	<script src="build/three.js"></script>
+	<script src="unity/TemplateData/UnityProgress.js"></script>
+	<script src="unity/Build/UnityLoader.js"></script>
+	<script>
+		var unityInstance = UnityLoader.instantiate("unityContainer", "unity/Build/Cube 0.2.json", { onProgress: UnityProgress });
+	</script>
+</head>
+
+<body>
+	<div class="maindiv">
+		<div class="titlediv">
+			<h1>CONSTRUCTING DIGITAL SPACE</h1>
+		</div>
+
+        <div class="navbar">
+            <button id="tab-button-intro" class="navbar-button tablinks"
+                    onclick="switchTab(event, 'tab-intro')">
+                INTRODUCTION
+            </button>
+            <button id="tab-button-story" class="navbar-button tablinks"
+                    onclick="switchTab(event, 'tab-story')">
+                EXPLORATION
+			</button>
+			<button id="tab-button-caadria" class="navbar-button tablinks"
+					onclick="switchTab(event, 'tab-caadria')">
+				CAADRIA
+			</button>
+            <button id="tab-button-vr" class="navbar-button tablinks"
+                    onclick="switchTab(event, 'tab-vr')">
+                PRECEDENT
+            </button>
+            <button id="tab-button-outcomes" class="navbar-button tablinks"
+                    onclick="switchTab(event, 'tab-outcomes')">
+                THESIS OUTCOMES
+            </button>
+            <button id="tab-button-unity" class="navbar-button tablinks"
+                    onclick="switchTab(event, 'tab-unityapp')">
+                EXPERIMENTATION
+            </button>
+        </div>
+
+		<div id="tab-intro" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+
+				<div class="section-quote">
+					<p class="quote">
+						"It is likely that in the near future, a large number of people will be spending a
+						considerable amount of time 'inside' such worlds. If we are to live - even partially - 'inside'
+						these worlds, we must consider their architecture. The nature of space in VEs, however, is
+						fundamentally different from the
+						nature of real space and consequently the architecture of VEs will require a new theory and
+						practice." - Bourdakis & Charitos, 1999
+					</p>
+				</div>
+
+				<div class="section">
+					<h2>CONCEPT</h2>
+
+					<h3>Architecture and Virtual Environments</h3>
+					<p>
+						Despite the fact that virtual environments (VEs) have been around for more than 20 years and
+						there has been continued research into their design and implementation, they have been regarded
+						largely as entertainment and as
+						<b>accessories to physical interaction</b>. In the midst of the post-digital revolution and the ongoing
+						pandemic, we are increasingly looking at VEs as <b>substitutes</b> for real-life interaction,
+						whether it be for social reasons,
+						education, work, or leisure.
+					</p>
+					<p>
+						In that light, it is more important than ever to consider the design of virtual spaces in
+						<b>relation to the human experience</b>. Within virtual environments, traditional architectural
+						conceptions of scale, spatiality, movement,
+						framing and interaction take on vastly different forms, yet designing virtual space is left
+						largely to the purview of software developers, concept artists and game designers. Given the
+						<b>increasingly prevalant role of virtual
+						environments</b> in our daily lives, as well as the emergence of new technologies such as <b>VR and AR</b>,
+						the spatial design of VEs deserves to be <b>examined through an architectural lens</b>.
+					</p>
+
+					<p class="quote">
+						"Architects need to start thinking about virtual reality as not just a tool, but as
+						an end medium in itself." - Brett, 2015
+					</p>
+				</div>
+
+				<div class="media-section">
+					<div class="media-item"><img src="img/intro-1.png"></div>
+					<div class="media-item"><img src="img/intro-2.png"></div>
+					<div class="media-item"><img src="img/intro-3.png"></div>
+				</div>
+
+				<div class="section">
+					<h2>Desire for Physicality</h2>
+					<p>
+						Virtual communication platforms can be assessed on a <b>spectrum of spatiality and modes of
+						interaction</b>, from collaborative documents, text chat, virtual whiteboards, voice chat, or video
+						chat, to more fully featured environments
+						such as 2D, isometric, or 3D game-like simulations, or even fully VR platforms. Especially in
+						most of the non-spatial platforms, most would agree that something is lost when transitioning
+						from the physical to the virtual.
+						Without people and items occupying a physical space, the perception of meetings and events is
+						changed. In the digital realm, out of sight often means out of mind.
+					</p>
+					<p>
+						Within these virtual platforms there is an obvious desire for some form of <b>tangibility and sense
+						of space</b>. How do we design virtual spaces conducive to interaction that aren't just carbon
+						copies of physical space?
+					</p>
+
+					<ol>
+						<li>What are the different rules that govern spatial interaction in virtual environments?</li>
+						<li>
+							In what ways can we take advantage of virtual platforms to go beyond replicating the
+							physical?
+						</li>
+						<li>
+							Can virtual environments take on a less detailed / more abstracted form, yet offer a
+							satisfying level of spatial and physical immersion?
+						</li>
+					</ol>
+				</div>
+
+				<div class="media-section">
+					<div class="media-item"><img src="img/phys-1.jpg"></div>
+					<div class="media-item"><img src="img/phys-2.jpg"></div>
+				</div>
+
+				<div class="section">
+					<h2>PLATFORM</h2>
+					<p>
+						There are two possible mediums for the exploration of virtual environments - a "web app" or
+						game-environment operating in <b>2D screen space</b>, or the use of <b>VR technology</b> which immerses the
+						user entirely within the 3D space. After some background research and testing, I have decided to with VR despite the
+						increased difficulty, due to the much greater potential that the platform offers.
+					</p>
+				</div>
+
+				<div class="section-flex">
+					<div class="inner-flex">
+						<h3>Web App</h3>
+						<ul class="list-plus">
+							<li>Accessible</li>
+							<li>Potential for interesting conclusions</li>
+						</ul>
+						<ul class="list-minus">
+							<li>Well researched since late 90s</li>
+							<li>Confined to screen space, less spatial opportunity</li>
+							<li>Possibly becoming less relevant</li>
+						</ul>
+					</div>
+
+					<div class="inner-flex">
+						<h3>Virtual Reality</h3>
+						<ul class="list-plus">
+							<li>Newer technology - less well explored</li>
+							<li>Spatial implications are much more relevant</li>
+						</ul>
+						<ul class="list-minus">
+							<li>Less accessible for presentation</li>
+							<li>Harder to test and build environment</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="section">
+					<h2>PROGRAMME</h2>
+					<p>At its core, creating a spatial experience in virtual environments is useful in several ways:</p>
+					<ol>
+						<li>
+							<b>Social Function</b> - it is easier to meet and interact when you can understand
+							relative positions in space
+						</li>
+						<li>
+							<b>3D Content</b> - interactions with content that are necessarily 3-dimensional, such as
+							architectural models, large documents, physical items, museums, etc
+						</li>
+						<li>
+							<b>Art and Entertainment</b> - spatial environments are of course important for 3D
+							experiences such as games, entertainment, interactive media
+						</li>
+					</ol>
+				</div>
+
+				<div class="media-section">
+					<div class="media-item"><img src="img/prog-1.png"></div>
+					<div class="media-item"><img src="img/prog-2.png"></div>
+					<div class="media-item"><img src="img/prog-3.png"></div>
+				</div>
+
+				<div class="section-sub">
+					<h3>Educational Focus</h3>
+					<p>
+						In order to limit the scope of the project and work towards a more defined goal, I have decided to focus on 
+						the design of <b>learning environments</b>. That is, any usage which involves <b>multiple actors</b> as well as the need to
+						<b>impart knowledge through the use of multimedia</b>. This would target two of the three
+						functions of virtual space as outlined above.
+					</p>
+					<p>
+						Such learning environments would include archetypes such as classrooms, lectures, conferences,
+						groupwork, study spaces and so on.
+					</p>
+				</div>
+
+				<div class="section">
+					<h2>PRECEDENT</h2>
+					<p>
+						The application of Architecture in virtual environments has been studied since the late 90s with
+						the advent of rudimentary 3D graphics.
+						However, the virtual world as we now understand it has a clear precursor - Cinema - which
+						theorists and filmmakers have already studied in depth since the early 20th Century.
+					</p>
+
+					<h3>Architecture and Film</h3>
+					<p>
+						Cinema as a series of framed experiences - drawing from the heritage of the Greek picturesque in
+						Architecture. Every experience within the virtual environment is necessarily framed by the
+						boundaries of the screen space, making
+						the curation of views and angles even more important.
+					</p>
+					<p>
+						Within film as well as virtual environments, spatial perception is bounded by the <b>
+							screen
+							space
+						</b>. It is impossible to 'feel' the space around you without actively looking up or
+						around. What are the implications of space-creation under these constraints?
+					</p>
+					<p>
+						Architecture as an <b>inattentive</b> form of viewing, whereas Cinema involves <b>attentive</b>
+						viewing. In a way, VEs lie somewhere between the two - there is a conscious attention devoted to
+						experiencing the virtual
+						environment, yet with enough exposure the environment is likely to fade into the background as
+						well.
+					</p>
+
+					<h3>Virtual Environment Design</h3>
+					<p>
+						Virtual environments have in fact been studied for over 20 years, with papers examining the
+						various aspects of VE design in early 3D environments. I am currently in the process of conducting exhaustive
+						research on the available literature, to see what can be applied to current issues, what
+						frameworks can be adapted or referenced, as well as what issues might already have been investigated.
+					</p>
+
+					<ul class="list-minus">
+						<li><i>Design Precedents for Virtual Worlds</i> (1996)</li>
+						<li>
+							<i>Virtual Environment Design - Defining a new direction for architectural education</i>
+							(1999)
+						</li>
+						<li><i>Design in Virtual Environments Using Architectural Metaphor</i> (2003)</li>
+						<li><i>A Methodology of Design for Virtual Spaces</i> (2008)</li>
+						<li>
+							<i>Challenges in Virtual Environment Design: An Architectural Approach to Virtual Spaces</i>
+							(2008)
+						</li>
+						<li><i>Architects in the Design of Virtual Reality Spaces</i> (2016)</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="tab-story" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+
+				<div class="section-quote">
+					<p class="quote">
+						A virtual environment can through the visual dimension of perception, in
+						combination with interactive feedback, be helpful in generating immersiveness, understood as the
+						sensation of actually being present in an architectural space. A sensation of being present,
+						even while one is maintaining a conscious knowledge that this feeling is only an illusion
+						created by a digital model. - Hermund et al. 2018
+					</p>
+				</div>
+
+				<div class="section">
+					<h2>PRELIMINARY INVESTIGATION</h2>
+					<p>
+						The smaller preliminary study aims to investigate the experience of spatiality in virtual reality
+						environments. Building upon previous research that has investigated the perception of virtual
+						space, this research project will focus on designing for <b>human interaction and learning</b>.  Although there are many possible parameters to explore (as seen below),
+						I will be focusing on <b>extracting design principles that govern virtual user interaction</b>. The results of this study
+						will form a set of design guidelines for virtual learning spaces which will then be used for the final product.
+					</p>
+				</div>
+
+				<div class="section-flex">
+					<div class="inner-flex">
+						<h3>Topic 1: Examining Social Spatiality in Virtual Reality Environments</h3>
+						<ul class="list-minus list-spaced">
+							<li>In recent years, the use of VR has become more accessible and widespread, with one of the main uses being social lobbies such as AltSpaceVR, Rec Room, and VR Chat.</li>
+							<li>The ability to relate to others in 3D space is a compelling means of enhancing virtual interactions beyond text/voice/video chat.</li>
+							<li>Thus far, the design of most virtual environments has tended towards imitative environments that mimic physical space – in fact, there is often an emphasis on physical cues and architecture to make users feel at ease within the virtual environment.</li>
+							<li>In addition, there are a myriad of interfaces by which users interact with the virtual world that either enhance or complement the tangible experience of being in the virtual space.</li>
+							<li>Through the review of existing literature as well as the study of existing virtual spaces, this paper aims to examine the various spatial approaches taken in the design of such virtual environments, their varying impact on the user experience, as well as making recommendations regarding future design strategies for virtual environments.</li>
+						</ul>
+					</div>
+
+					<div class="inner-flex">
+						<h3>Topic 2: Designing Virtual Spaces for Information Exchange</h3>
+						<ul class="list-minus list-spaced">
+							<li>In recent years, the use of VR has become more accessible and widespread. Aside from its potential for entertainment and socializing, VR environments also offer a new platform for productive interactions and information exchange.</li>
+							<li>From small, personal meetups to large conference settings, the use of virtual spaces for learning and information transfer has suddenly become an extremely pertinent topic in the wake of the COVID-19 crisis.</li>
+							<li>The use of VR as a platform for education has been gaining popularity but remains somewhat in its infancy due to the limitations of accessibility and technology, lacking the proliferation of design approaches and experimentation that comes with mature technologies.</li>
+							<li>In the design of such virtual spaces for information transfer (defined as any interaction with two or more participants as well as some external information that needs to be communicated), there remains room for experimentation with varying spatial configurations and methods of interaction.</li>
+							<li>Through the design and testing of some controlled virtual settings, this study aims to develop some basic rules and design strategies that govern the design of such virtual environments.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="media-section">
+					<div class="media-item"><img src="img/neufert-1.jpg"></div>
+					<div class="media-item"><img src="img/neufert-2.jpg"></div>
+				</div>
+
+
+				<div class="section">
+					<h2>Navigation</h2>
+					<p>
+						Testing movement from point A to B, or user orientation within complex spaces. How easily can
+						users navigate different types of spaces within virtual space?
+					</p>
+					<h3>Extra-Diegetic Elements</h3>
+					<p>
+						In film and game design, diegesis refers to elements that belong to the narrative space such as
+						characters, props, set, sound, etc, while extra- or non-diegetic refers to elements which are
+						outside of the scene, such as soundtracks, overlays, or interface elements. How useful are
+						extra-diegetic cues in the understanding of virtual space? Is it possible to do without them?
+					</p>
+					<h3>Modes of Movement</h3>
+					<p>
+						Especially in full VR environments, teleportation is a common method of transportation due to the
+						disorientation associated with walking in-game but standing still in real life. What
+						implications does this have on the way that we perceive and understand the sequence of spaces?
+					</p>
+				</div>
+
+				<div class="media-section">
+					<div class="media-video">
+						<iframe src="https://www.youtube.com/embed/kEB11PQ9Eo8?start=30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				
+				<div class="section">
+					<h2>Information</h2>
+					<p>What aspects of spatial design affect transmission of information? 3D space mainly allows for the layout of information in a spatial manner, making it easier to understand and organise large sets of data.</p>
+					<h3>Understanding the potential of spatial information presentation</h3>
+					<ol>
+						<li>Viewing information in screen-space</li>
+						<li>Physically-imitative information viewing</li>
+						<li>Hybrid viewing - extra-diegetic</li>
+					</ol>
+					<h3>Designing spaces for information viewing</h3>
+					<p>How do we design environments where large amounts of information or media can be easily viewed and understood?</p>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/st-info-1.png"></div>
+					<div class="media-item"><img src="img/st-info-2.png"></div>
+					<div class="media-item"><img src="img/st-info-3.png"></div>
+				</div>
+				<div class="section">
+					<h2>Interaction</h2>
+					<p>Another major consideration in the design of spaces would be the facilitation of interaction between participants. Again, the conception of what is 'human scale' and distance is uncertain in the virtual environment.</p>
+					<h3>Number of users</h3>
+					<p>Possibility of rooms and environments to adapt to the number of users in a space, creating different settings for different purposes.</p>
+					<h3>Distance between users</h3>
+					<p>How does the distance between users affect perception of space and interactions? Does it actually matter given that communication can transcend space? Usually, people prefer to be up close to see facial expressions and hear better, but without such concerns in virtual space, what kind of "personal space" do users require?</p>
+					<h3>Medium of interaction</h3>
+					<p>Variety of possible modes for interaction - text, voice, other visual cues. Possibility of using spatial features as cues for interaction? E.g. walls block sound, distance modulates sound, line of sight, etc.</p>
+					<h3>Navigation between groups</h3>
+					<p>Tying in to the above idea of navigation - interactions between various groups can be represented in physical space using overlays, perspectives, or switching between spaces.</p>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/st-inter-1.png"></div>
+					<div class="media-item"><img src="img/st-inter-2.png"></div>
+					<div class="media-item"><img src="img/st-inter-3.png"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="tab-caadria" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+
+				<div class="section">
+					<h2>PRELIMINARY INVESTIGATION</h2>
+					<p>
+						The smaller preliminary study aims to investigate the experience of spatiality in virtual reality
+						environments. Building upon previous research that has investigated the perception of virtual
+						space, this research project will focus on designing for <b>human interaction and learning</b>.  Although there are many possible parameters to explore (as seen below),
+						I will be focusing on <b>extracting design principles that govern virtual user interaction</b>. The results of this study
+						will form a set of design guidelines for virtual learning spaces which will then be used for the final product.
+					</p>
+				</div>
+
+				<div class="section">
+					<h2>CAADRIA ABSTRACT</h2>
+					<p>
+						In recent years, the use of virtual reality (VR) using Head Mounted Displays (HMDs) has become more accessible and widespread, with diverse applications in fields such as education, entertainment, and industry. Immersion in a 3D virtual space is a compelling means by which we can not only experience simulated environments, but also enhance virtual interactions beyond regular forms of online communication such as text and video. 
+					</p>
+					<p>
+						In the wake of the COVID-19 outbreak, we are increasingly looking at virtual platforms as substitutes to for real-life interaction. Although much has already been written about the spatial design of non-VR virtual environments (Charitos, 1997), the spatial design of VR environments remains relatively unstudied. Given this increasing potential of virtual environments in our daily lives, the design of VR environments warrants closer examination through an architectural lens (Brett, 2015).
+					</p>
+					<p>
+						Thus far, the design of most VR environments has tended towards imitative environments that mimic physical spaces – in fact, there is often an emphasis on physical cues and architecture to make users feel at ease within the virtual environment, reminiscent of skeuomorphic design during the earlier years of the digital era (Norman, 2013).
+					</p>
+					<p>
+						Yet, novel modes of seeing, moving, and hearing within the virtual space present an opportunity to move beyond the limitations of the real-world. We refer to these novel modes as virtual physics, in contrast to the laws of physics in the real world, which we refer to as real physics.
+					</p>
+					<p>
+						For VR spaces that aspire to support effective peer-to-peer human interactions, slavishly adhering to real physics can be frustrating. However, discarding all real physics can also be highly disorientating. The divergence between real and virtual physics therefore needs to be critically analyzed in relation to the affordances provided for supporting peer-to-peer interactions. 
+					</p>
+					<p>
+						In this paper, we undertake a critical review of the divergence between real and virtual physics within various popular VR environments used for games, entertainment and socializing, with a focus on the supporting peer-to-peer interactions. 
+					</p>
+					<p>
+						Based on this review, a taxonomy of virtual physics have been distilled, relating to how seeing, moving, and hearing in these environments diverges from the real world. Each of the rules are analyzed. A novel type of virtual environment is then hypothesized, incorporating the rules and design features that are seen to be most effective in supporting overall goal of peer-to-peer interactions between people in the virtual space.
+					</p>
+					<p>
+						In order to test the hypothesis, a series of multi-user virtual environments were developed in Unity 3D, incorporating differing combinations of the proposed virtual physics. Small groups of five participants were asked to complete various tasks requiring peer-to-peer interaction and communication. Two groups of participants were tested. In the first group, participants already knew each other while in the second group, the participants had never met before. 
+					</p>
+					<p>
+						The experiments with the groups of participants demonstrated that the proposed virtual physics has a positive impact on the peer-to-peer interactions, for both groups of participants. The paper concludes with a series of recommendations for subsequent areas of research exploration.
+					</p>
+					<h3>References</h3>
+					<ol>
+						<li>Angulo, A. (2015) “Rediscovering Virtual Reality in the Education of Architectural Design: The immersive simulation of spatial experiences”. Ambiances 1 | 2015.</li>
+						<li>Brett, E. (2016) Architects in the Design of Virtual Reality Spaces [Unpublished master’s thesis]. UC Berkeley.</li>
+						<li>Charitos, D. & Bridges, A.H. (1997). “The Architectural Design of Information Spaces in Virtual Environments”, Proc. 1st International Conference “Consciousness Reframed”, Ascott, R. (ed.), CAiiA, Newport: University of Wales College.</li>
+						<li>Norman, D. (2013) The Design of Everyday Things: Revised and Expanded Edition. Basic Books.</li>
+					</ol>
+				</div>
+
+				<div class="section">
+					<h2>Research Parameters</h2>
+					<p>"Virtual Physics" - How can we optimise the way in which people interact in virtual space?</p>
+					<p><b>! ARCHITECTURAL LENS !</b> <br/>
+						Don't get too distracted with non-architectural / non-spatial configurations and possibilities.</p>
+					<h3>Established Conventions</h3>
+					<ol>
+						<li>Use of teleportation + room-space as a primary navigational tool. <br/> Minimising motion-sickness and making full use of existing VR technology.</li>
+						<li>Gravity is standardised <br/> Since minimising motion-sickness is a primary concern, creating environments that allow for different gravitational rules would likely be too disorienting for users. <b>(to create test case - inception-like wall walking)</b></li>
+						<li>Interpersonal scale <br/> Since we are trying to maximise relatability and interaction, relative scale between participants should be maintained. Environment could change depending on the goals of the simulation.</li>
+					</ol>
+				</div>
+				<div class="section">
+					<h3>Navigation (micro)</h3>
+					<p>Within a given space - can users successfully move around and reach various points?</p>
+					<ol>
+						<li>Real-life imitative: flat layout</li>
+						<li>Real-life imitative: levels - stairs/slopes vs no stairs</li>
+						<li>Virtual physics: portals (since aiming of teleportation is top-down, pads might work better)</li>
+						<li>Virtual physics: doorways (might be less useful - requires forward motion)</li>
+					</ol>
+					<h3>Navigation (macro)</h3>
+					<p>Testing wayfinding between multiple rooms - teleportation, spatial relationships, overview?</p>
+					<ol>
+						<li>Choosing from textual menu (hypothesis - vr menus are fiddly)</li>
+						<li>Spatially connected rooms (hypothesis - limited)</li>
+						<li>Spatial representation of disconnected rooms</li>
+					</ol>
+					<h3>Environmental Surfaces</h3>
+					<p>How should supporting props and environment be designed? Surfaces for placing objects, surfaces for viewing.</p>
+					<ol>
+						<li>No surfaces, objects floating (easy but messy)</li>
+						<li>Horizontal surfaces at different heights, object gravity (any difference to real-life desk height)</li>
+						<li>Viewing surfaces (check different heights and distances)</li>
+					</ol>
+					<h3>Interpersonal Proximity</h3>
+					<p>Proximity of users for comfortable interaction. Hypothesis - depends on static/moving. Users who are able to move are likely to be more comfortable with distance that they can control, seated/static users might be more comfortable with a slightly further distance for comfort.</p>
+					<ol>
+						<li>Test static positions at multiple distances</li>
+						<li>Test room-scale positions at multiple distances</li>
+						<li>Test levels - given a difference of levels, do users tend to prefer hierarchical or equal relationships?</li>
+						<li>Test multi-user situations with various room sizes</li>
+					</ol>
+					<h3>Perception - Sound</h3>
+					<p>Proximity audio might seem like the most natural choice but it doesn't make sense when we are looking at unequal interactions - lecturer talking to students should be given priority in speaking. Not sure if this needs testing really, maybe just illustration and explanation.</p>
+					<ol>
+						<li>Test proximity audio with varying group sizes? not sure if useful since everyone in the group would want to hear each other obviously.</li>
+						<li>Test proximity audio with group given smaller task of exchanging information between subgroups.</li>
+					</ol>
+					<h3>Instanced spaces</h3>
+					<p>Having each user be the center of their own interactions - seeing multiple interactions at once or having a 'normalised' representation, eg lecturer appears as one-on-one or small group consultation.</p>
+					<ol>
+						<li>Test one-to-many group setting, everyone can see each other</li>
+						<li>Test one-to-many represented as one-to-few</li>
+						<li>Test one-to-many represented as one-to-one</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div id="tab-outcomes" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+				<div class="section">
+					<h2>THESIS OUTCOMES</h2>
+					<p>
+						The final thesis outcome will be an <b>interactive platform for learning</b> that allows users
+						to construct their own virtual environments, conforming to the principles highlighted by the
+						earlier investigations. The use of these constructed environments would range from the temporal
+						(meeting rooms) to the semi-permanent (classrooms, museums, conferences), as well as suiting groups of various sizes such as personal discussions, small groups, or large lecture settings.
+					</p>
+					<p>
+						The aim would be to make the experience as user-friendly as possible, with parametric rules and algorithms
+						governing the creation and adjustment of spaces according to the <b>kit-of-parts approach</b> from earlier research.
+					</p>
+				</div>
+
+				<div class="section">
+					<h3>Original App Concept</h3>
+					<ol>
+						<li>
+							Users choose from a set of pre-made environments or create their own within an intuitive,
+							front-end editor interface.
+						</li>
+						<li>
+							Users 'playtest' their environment to see if it suits their needs - aim for minimal
+							playtesting due to intended ease of use and modularity.
+						</li>
+						<li>Resulting virtual environment can be used by multiple participants for learning and discussion.</li>
+					</ol>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/sb-thesis-1.png"></div>
+					<div class="media-item"><img src="img/sb-thesis-2.png"></div>
+					<div class="media-item"><img src="img/sb-thesis-3.png"></div>
+				</div>
+
+				<div class="section">
+					<h3>The Abstract Potential of Virtual Space</h3>
+					<p>
+						What if the final interface is not "building" a space in the traditional sense, but rather <b>selecting from a library of topologies</b> and <b>controlling the parameters</b> of the virtual space?
+						If all the spaces are dynamically generated according to function and capacity, there is no need for the user to build environments by hand. The resulting spaces might be <b>dynamic</b>, reshaping
+						themselves according to the needs of the participants. Spatial relationships between users as well as between 'rooms' might be fluid or obey different hierarchies in the virtual space.
+					</p>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/mockup-ss.gif"></div>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/topo-1.png"></div>
+					<div class="media-item"><img src="img/topo-2.png"></div>
+					<div class="media-item"><img src="img/topo-3.png"></div>
+				</div>
+
+				<div class="section">
+					<h2>TIMELINE</h2>
+					<p>As the project comprises multiple stages with different moving parts (concept, design, tech), I have split up the project timeline according to the semesters as well as the deadlines for the CAADRIA paper submission.</p>
+				</div>
+				<div class="section-flex">
+					<div class="inner-flex">
+						<h3>Semester 1</h3>
+						<p>Finish comprehensive research of existing literature and conduct study on parameters for spatial design. Iterate various spaces and environments, developing guidelines for virtual environment design and creating a 'kit-of-parts' approach.</p>
+					</div>
+					<div class="inner-flex">
+						<h3>December Break</h3>
+						<p>Focus on platform development and honing skills, build a foundation for final app/virtual environment product. Revise CAADRIA paper if necessary.</p>
+					</div>
+					<div class="inner-flex">
+						<h3>Semester 2</h3>
+						<p>Design work - using the earlier research and design strategies, develop the final platform with a focus on user experiences and perception of space. Iterative design process as with a typical architectural design project.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="tab-vr" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+				<div class="section">
+					<h2>REFERENTIAL SPATIALITY</h2>
+					<p>
+						Most VR apps appear to have a richly detailed physical space as an anchor for users, likely to orientate them to the unfamiliar environment in the same way that skeumorphic design serves to acclimatise new digital users. Possibility of using such spaces as 'hubs' or anchors, while specialised rooms might be more abstract.
+					</p>
+					<h3>VR Hubs</h3>
+					<ul class="list-minus">
+						<li>Windows Mixed Reality</li>
+						<li>AltspaceVR</li>
+						<li>SteamVR</li>
+						<li>VRChat</li>
+					</ul>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/VR_1.jpg"></div>
+					<div class="media-item"><img src="img/VR_2.jpg"></div>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/VR_3.jpg"></div>
+					<div class="media-item"><img src="img/VR_4.jpg"></div>
+				</div>
+				<div class="section">
+					<h2>REPRESENTATION</h2>
+					<p>Representations of objects, data and links are entirely spatial, taking the form of floating windows or interactable 3D objects. The ability to manipulate objects also helps greatly with the sense of immersion in the virtual environment.
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/VR_5.jpg"></div>
+					<div class="media-item"><img src="img/VR_6.jpg"></div>
+				</div>
+				<div class="section">
+					<h2>NAVIGATION</h2>
+					<p>Another major consideration in the design of spaces would be the facilitation of interaction between participants. Again, the conception of what is 'human scale' and distance is uncertain in the virtual environment.</p>
+					<h3>Room-Scale</h3>
+					<p>Walking or room-scale navigation provides the greatest immersive capacity, however it can also be more tiring and stressful for participants. The space requirement for room-scale navigation is also not necessarily accessible.</p>
+					<h3>Controller</h3>
+					<p>Controller movement scores fairly high on immersion and is easy to use, however it has a propensity to induce motion-sickness especially if you are not used to it.</p>
+					<h3>Teleportation</h3>
+					<p>Teleportation is the easiest and most convenient, however it scores lowest for immersiveness.</p>
+				</div>
+				<div class="media-section">
+					<div class="media-item"><img src="img/VR_7.jpg"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="tab-webapp" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+				<div id="container" class="webapp-container no-outline no-outline-child"></div>
+			</div>
+		</div>
+
+		<div id="tab-unityapp" class="pagecontent-outer tabcontent">
+			<div class="pagecontent">
+				<div class="section">
+					<h2>UNITY PLATFORM EXPERIMENT</h2>
+					<h3>Controls</h3>
+					<ul class="list-minus">
+						<li>WASD to move</li>
+						<li>V to toggle first person mode</li>
+						<li>G to toggle edit mode</li>
+						<li>Click to place blocks in edit mode</li>
+					</ul>
+				</div>
+				<div class="webapp-unity-container no-outline no-outline-child">
+					<div id="unityContainer"></div>
+				</div>
+				<div class="media-section">
+					<div class="media-item">
+						<video controls>
+							<source src="img/vr-demo-1.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--Script for end of page load-->
+	<script defer>
+		document.getElementById('tab-button-intro').click();
+	</script>
+	<script defer type="module" src="three-tokyo.js"></script>
+
+</body>
